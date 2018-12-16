@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<script language="javascript">
+	alert("Benvenuti nel servizio di Calcolo ISEE");
+</script>
+
+<script src="../js/gestioneServizi.js" ></script>
+<script src="../js/iseeJQuery.js" ></script>
+<!-- 
+<script src="../js/iseeDom.js" ></script>
+ -->
+<h1> Questa è la pagina di Calcolo ISEE</h1>
+<div class="table-responsive">
+	<table class="table">
+	<caption>Nominativo degli studenti iscritti</caption>
+	<thead>
+		<tr>
+			<th>Matricola</th>
+			<th>Nome</th>
+			<th>Cognome</th>
+			<th>Data di Nascita</th>
+			<th>Calcola ISEE</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="success">
+			<td>103123</td>
+			<td>Kristian</td>
+			<td>Reale</td>
+			<td><time>10/10/2010</time></td>
+			<td><input type="button" value="Calcola ISEE" onclick="stud = new Studente('103123', 'Kristian', 'Reale', '10/10/2010'); operazioni(stud);" /></td>
+			<td><input type="button" value="Calcola ISEE Maschera" onclick="stud = new Studente('103123', 'Kristian', 'Reale', '10/10/2010'); maschera(stud);" /></td>
+	
+		</tr>
+		<tr class="active">
+			<td>111111</td>
+			<td>Mario</td>
+			<td>Rossi</td>
+			<td><time>16/11/2010</time></td>
+			<td><input type="button" value="Calcola ISEE" /></td>
+		</tr>
+		<tr class="success">
+			<td>53453</td>
+			<td>Antonio</td>
+			<td>Bianchi</td>
+			<td><time>10/10/2020</time></td>
+			<td><input type="button" value="Calcola ISEE" /></td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+
+<section id="mascheraCalcolo">
+	<div class="row">
+		<div id="selStudente"><h4>-- Nessuno studente selezionato -- </h4></div>
+		<div class="col-sm-3">
+			<form>
+				<div class="form-group">
+					<label>
+						Numero dei componenti del nucleo:
+					</label>
+					<input id="numComponenti" type="text" />
+					<div id="valori">
+					   
+					</div>
+					<div class="form-group">
+						<input id="calcolaISEE" type="button" value="Calcola ISEE" class="btn btn-success" />	
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div><label>ISR:</label><span id="ISR"></span></div>
+		<div><label>ISP:</label><span id="ISP"></span></div>
+		<div><label>ISE:</label><span id="ISE"></span></div>
+		<div><label>Scala di Equivalenza:</label><span id="scalaEquivalenza"></span></div>
+		<div><label>ISEE:</label><span id="ISEE"></span></div>	
+	</div>
+</section>
+
+</body>
+</html>
+
+
