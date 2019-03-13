@@ -1,3 +1,0 @@
-corsodilaurea(codice, nome, dipartimento_codice*)
-afferisce(id, corso_codice*, corsodilaurea_codice*)
-dipartimento(codice, nome) 

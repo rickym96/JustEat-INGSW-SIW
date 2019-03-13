@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<!-- <display-name>justeat-ingsw-siw-demo-war</display-name>
+	<welcome-file-list>
+
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+ -->
+
+      <servlet>
+  <servlet-name>RegistrazioneUtente</servlet-name>
+    <servlet-class>it.unical.ingsw.justeat.db.controller.registrazioneUtente</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrazioneUtente</servlet-name>
+    <url-pattern>/registraUtente</url-pattern>
+  </servlet-mapping>
+  
+
+  
+     <servlet>
+  <servlet-name>EliminaPietanza</servlet-name>
+    <servlet-class>it.unical.ingsw.justeat.db.controller.eliminaPietanza</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminaPietanza</servlet-name>
+    <url-pattern>/eliminapietanza</url-pattern>
+  </servlet-mapping>
+
+        <servlet>
+  <servlet-name>RicercaRistorante</servlet-name>
+    <servlet-class>it.unical.ingsw.justeat.db.controller.CercaRistorante</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RicercaRistorante</servlet-name>
+    <url-pattern>/cercaRistorante</url-pattern>
+  </servlet-mapping>
+  
+  
+
+
+
+	<servlet>
+		<servlet-name>InserisciPietanza</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.MettiPietanza</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InserisciPietanza</servlet-name>
+		<url-pattern>/aggiungiPietanza</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Credenziali</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.CredenzialiLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Credenziali</servlet-name>
+		<url-pattern>/inviaCredenziali</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FaiLogin</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FaiLogin</servlet-name>
+		<url-pattern>/doLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.Home</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ioSono</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.cosaSono</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ioSono</servlet-name>
+		<url-pattern>/what</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ModificaDati</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.modificaDati</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificaDati</servlet-name>
+		<url-pattern>/modificadati</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ModificaPassword</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.modificaPassword</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificaPassword</servlet-name>
+		<url-pattern>/modificapassword</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ModificaCarta</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.modificaCarta</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificaCarta</servlet-name>
+		<url-pattern>/modificacarta</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ListaPietanze</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.listaPietanze</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPietanze</servlet-name>
+		<url-pattern>/pietanze</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegistrazioneRistorante</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.registrazioneRistorante</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrazioneRistorante</servlet-name>
+		<url-pattern>/registrazioneRistorante</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ModificaDatiRistorante</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.modificaDatiRistorante</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificaDatiRistorante</servlet-name>
+		<url-pattern>/modificaRistorante</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>OttieniRistorante</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.ottieniRistorante</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OttieniRistorante</servlet-name>
+		<url-pattern>/ottieniRistorante</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>CarrelloTemp</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.CarrelloTemporaneo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CarrelloTemp</servlet-name>
+		<url-pattern>/carrellotemp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListaPietanzeProfile</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.listaPietanzeProfilo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPietanzeProfile</servlet-name>
+		<url-pattern>/foodprofilelist</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>AggiungiPietanzaCarrello</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.AggiungiAlCarrelloTemp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiPietanzaCarrello</servlet-name>
+		<url-pattern>/AggiungiAlCarrelloTemp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListaOrdiniUtente</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.listaOrdini</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaOrdiniUtente</servlet-name>
+		<url-pattern>/ordiniutente</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>TogliPietanza</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.togliUnaPietanza</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TogliPietanza</servlet-name>
+		<url-pattern>/togliUnaPietanza</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ConfermaOrdine</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.ConfermaOrdine</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConfermaOrdine</servlet-name>
+		<url-pattern>/confermaOrdine</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>daifeedback</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.salvaFeedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>daifeedback</servlet-name>
+		<url-pattern>/daifeedback</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Feedback</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.feedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Feedback</servlet-name>
+		<url-pattern>/feedback</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>creaOrdine</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.creaOrdine</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>creaOrdine</servlet-name>
+		<url-pattern>/Creaordine</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>RiceviOrdine</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.ordiniRicevuti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RiceviOrdine</servlet-name>
+		<url-pattern>/ordiniRicevuti</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>ArchiviaOrdine</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.archivia</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArchiviaOrdine</servlet-name>
+		<url-pattern>/archiviaOrdine</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Cookieservlet</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.cookieservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cookieservlet</servlet-name>
+		<url-pattern>/cookieservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SocialLogin</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.SocialLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SocialLogin</servlet-name>
+		<url-pattern>/sociallogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ritornaFeedback</servlet-name>
+		<servlet-class>it.unical.ingsw.justeat.db.controller.ritornaFeedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ritornaFeedback</servlet-name>
+		<url-pattern>/ritornaFeedback</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+</web-app> 
